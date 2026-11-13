@@ -11,17 +11,21 @@
 			font-family: Questrial;
 			src: url("Questrial-Regular.ttf")
 		} h1 {
-			font: 36pt/2.8em Questrial;
-			text-align: left;
+			font: 36pt/1.4em Questrial;
 			color:#92538B;
-			text-align: left;
+			grid-area: 2/1/3/4;
+		} header {
+			width: 1080px;
+			max-width: 98%;
+			display: flex;
+			justify-content: space-between;
 		} #cloud-png {
 			margin: 30px 0 0 0;
-			float: right;
-			height: 134px;
-			width: 550px;
+			height: auto;
+			width: 400px;
 			box-shadow: none;
-			opacity: 0.4;
+			opacity: 1.0;
+			float: right;
 		} #alignment {
 			width: 1080px;
 			max-width: 98%;
@@ -64,22 +68,15 @@
 		} tr:nth-child(even) {
 			background: whitesmoke;
 			// color:#E4E9F4
-		} li {
-			width: 160px;
-			height: 35px;
+		} a {
+			height: auto;
 			border-radius: 6px;
 			list-style: none;
-			text-align: center;
 			font: 14pt/1.8em Questrial;
-			// background: grey; 
-			margin: 30px auto 0 30px;
+			margin: 30px auto 0 0;
 			display: block;
-		} a li {
         	color: #92538B;
-			// margin: 30px auto 0 30px;
-			// display: block;
-		} a li:hover {
-        	// background:#C99EC3;
+		} a:hover {
 			border: 1px solid #C193BC;
 			width: 160px;
 			margin: 30px auto 0 30px;
@@ -123,9 +120,11 @@
 </style>
 </head>
 <body>
-	<img id="cloud-png" src="cloudy-copy.png" />	
-	<a href="form.html"><li>Contact Me</li></a>
 	<div id="alignment">
+	<header>
+	<a href="form.html">Contact Me</a>
+	<img id="cloud-png" src="cloudy-copy.png" />	
+	</header>
 	<h1>Nayeli Marure Portfolio</h1>
 	<div id="textbox">
 		<figure>
